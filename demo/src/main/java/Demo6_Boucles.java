@@ -57,5 +57,7 @@ public class Demo6_Boucles {
             System.out.println("Compteur est de : " + cpt);
         }
 
+
+
     }
 }
