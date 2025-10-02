@@ -24,6 +24,9 @@ public class Demo3_Affichage {
         // \b backspace
         System.out.println("Hello\bWorld!");
 
+        // \n retour à la ligne
+        System.out.println("\nHello\nWorld\n!!");
+
         // Scanner
         Scanner sc = new Scanner(System.in);
         System.out.println("Quel est votre nom ?");
@@ -40,7 +43,7 @@ public class Demo3_Affichage {
         int ageUser = sc.nextInt();
         System.out.println("age : " + ageUser);
 
-        sc.nextLine(); // Vide la touche enttre laisser par le nextInt
+        sc.nextLine(); // Vide la touche entre laisse par le nextInt
         System.out.println("Veuillez ressaisir votre prenom ?");
         prenomUser = sc.nextLine();
         System.out.println("Bonjour " + prenomUser);
