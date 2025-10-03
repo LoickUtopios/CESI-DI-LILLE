@@ -24,10 +24,9 @@ public class Demo6_Boucles {
             System.out.println("Itération n°" + (i+1));
         }
 
-
         int i = 0;
         for(;;){
-            if(i < 10)
+            if(i >= 10)
                 break;
 
             System.out.println("Itération n°" + (i+1));

@@ -8,7 +8,7 @@ public class Demo5_Conditions {
             System.out.println("3 est supérieur à 2 !!!");
         }
 
-        if(3 > 2) System.out.println("3 est supérieur à 2 !!!");
+        if(3 > 2) System.out.println("3 est supérieur à 2 !!!"); // Non recommandé
 
         if(3 > 2)
             System.out.println("3 est supérieur à 2 !!!");
