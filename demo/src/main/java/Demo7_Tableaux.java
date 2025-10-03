@@ -1,3 +1,4 @@
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.SortedMap;
 
@@ -63,5 +64,29 @@ public class Demo7_Tableaux {
         }
 
         System.out.println("Il y a " + valTotal + " valeur(s) dans la matrice.");
-    }
+
+        // Copie de tableau
+        // Fausse copie (copie des références)
+        int[] tab1 = {1,2,3,4,5};
+        int[] tab2 = tab1;
+
+        tab2[0] = 10;
+        System.out.println("=== FAUSSE COPIE ===");
+        System.out.println(Arrays.toString(tab1));
+        System.out.println(Arrays.toString(tab2));
+
+
+        // Vrai copie
+        int[] tab3 = tab1.clone();
+        int[] tab4 = Arrays.copyOf(tab1, tab1.length);
+
+        tab3[0] = 55;
+        tab4[0] = 123;
+
+        System.out.println("=== VRAI COPIE ===");
+        System.out.println(Arrays.toString(tab1));
+        System.out.println(Arrays.toString(tab3));
+        System.out.println(Arrays.toString(tab4));
+
+     }
 }
