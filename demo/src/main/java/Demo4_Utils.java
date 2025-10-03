@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Demo4_Utils {
     public static void main(String[] args) {
         // puissance
@@ -18,6 +20,10 @@ public class Demo4_Utils {
         int max = Math.max(10, 30);
         int min = Math.min(20, 22);
 
-
+        // Random
+        int nbRandom = (int) (Math.random() * 50); // Math.random() donne un nombre entre 0 et 1
+        // ou
+        Random random = new Random();
+        int nbRandom2 = random.nextInt(-100,101);
     }
 }
